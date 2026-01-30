@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Capture Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    .container {
+      width: 360px;
+      margin: 80px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: #0176d3;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #015fb3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Register</h2>
+
+    <!-- These names/ids are what Data Cloud schema will map -->
+    <form>
+
+      <label>First Name</label>
+      <input type="text" name="firstName" id="firstName">
+
+      <label>Last Name</label>
+      <input type="text" name="lastName" id="lastName">
+
+      <label>Email</label>
+      <input type="email" name="email" id="email">
+
+      <label>Phone Number</label>
+      <input type="tel" name="phoneNumber" id="phoneNumber">
+
+      <button type="submit">Register</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
